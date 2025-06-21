@@ -22,7 +22,7 @@ jobs:
                     node -v
                     npm -v
                     pwd
-                    npm init playwright
+                    npm init playwright -- --quiet --install-deps --gha --browser chromium
                     echo "Dependencies installed successfully!"
                     
 
