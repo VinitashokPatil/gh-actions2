@@ -22,11 +22,7 @@ jobs:
                     node -v
                     npm -v
                     pwd
-                    mkdir -p /home/runner/work/_temp
-                    cd /home/runner/work/_temp
-                    echo "Current directory: $(pwd)"
-                    echo "Node.js version: $(node -v)"
-                    #npm install -g npm@latest  # Update npm to the latest version
+                    npm init playwright
                     echo "Dependencies installed successfully!"
                     
 
