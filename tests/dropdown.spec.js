@@ -27,8 +27,9 @@ test('meenakshi dropdown @smoke test',async ({page})=>{
     await page.locator("div[class*='cartSection'] h3").first().isVisible()
 
     await page.locator("text=Checkout").click();
-    await page.locator("[placeholder*='Country']").pressSequentially("ind")
+    await page.locator("[placeholder*='Country']").pressSequentially("ind", {delay:100})
     const dropdown = await page.locator('.ta-results')
+   
     await dropdown.waitFor()
    // const drop = await page.locator("section[class*='ta-results'] button span").last().waitFor().allTextContents
     const optioncount = await dropdown.locator("button").count()   //   .waitFor().count
