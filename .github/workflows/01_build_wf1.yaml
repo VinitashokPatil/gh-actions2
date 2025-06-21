@@ -16,7 +16,9 @@ jobs:
               run: |
                     echo "Installing dependencies..."
                     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+
                     nvm install 20  # Example: install Node.js version 20
+                    which nvm
                     node -v
                     npm -v
                     npm install -g npm@latest  # Update npm to the latest version
