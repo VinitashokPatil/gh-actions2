@@ -23,6 +23,7 @@ test('meenakshi dropdown @smoke test',async ({page})=>{
     await page.locator("[routerlink*='cart']").waitFor()
     await page.locator("[routerlink*='cart']").click()
     //await page.pause();
+    // hello
     await page.locator("div li").nth(1).waitFor()
     await page.locator("div[class*='cartSection'] h3").first().isVisible()
 
