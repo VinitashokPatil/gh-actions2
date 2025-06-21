@@ -16,4 +16,4 @@ Npm init playwright
 npx playwright install
 
 
-Npx playwright test –grep @smoke
+npx playwright test --grep "@smoke"
