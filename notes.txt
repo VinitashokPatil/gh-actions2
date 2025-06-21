@@ -1,0 +1,19 @@
+git@github.com:VinitashokPatil/gh-actions-course.git
+
+
+git remote add origin https://github.com/VinitashokPatil/gh-actions2.git
+git branch -M main
+git push -u origin main
+
+
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+nvm install 20  # Example: install Node.js version 20
+node -v
+npm -v
+
+Npm init playwright
+npx playwright install
+
+
+Npx playwright test –grep @smoke
