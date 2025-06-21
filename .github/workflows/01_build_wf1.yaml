@@ -1,0 +1,29 @@
+name: wf1
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v2
+    
+    
+            - name: Install dependencies
+              run: |
+                    echo "Installing dependencies..."
+                    
+
+            - name: Run tests
+              run: |
+                echo "Running tests..."
+                # Add your test commands here
+                echo "Tests completed successfully!"
+
+
+            
+
+        
