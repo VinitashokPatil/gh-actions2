@@ -22,6 +22,8 @@ jobs:
 
     - name: Deploy
       run: echo "Deploying to ${{ github.event.inputs.environment }} environment"
+    - name: Just a message
+      run: echo "branching."
     - name: Install dependencies
       run: npm ci
     - name: Install Playwright Browsers
