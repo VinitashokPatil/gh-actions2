@@ -1,4 +1,5 @@
-name: Playwright Tests
+name: Playwright Tests push
+description: Run Playwright tests on push to main or master branch
 on:
   push:
     branches: [ main, master ]

@@ -1,4 +1,5 @@
-name: Playwright Tests
+name: Playwright Tests with wf dispatch and inputs
+description: Run Playwright tests on manual dispatch with inputs for environment
 on:
     workflow_dispatch:
      inputs:

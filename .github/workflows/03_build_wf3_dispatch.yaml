@@ -1,4 +1,5 @@
-name: Playwright Tests
+name: Playwright Tests wf 3 dispatch without inputs - @example tag
+description: Run Playwright tests on manual dispatch
 on:
     workflow_dispatch:
 
@@ -7,7 +8,7 @@ jobs:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     env:
-        TEST_TAG: '@smoke'
+        TEST_TAG: '@example'
     steps:
     - uses: actions/checkout@v4
     - uses: actions/setup-node@v4
